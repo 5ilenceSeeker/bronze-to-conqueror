@@ -1,0 +1,10 @@
+sudo apt-get install openssh-client:-Install an OpenSSH Client
+sudo apt-get install openssh-server ii:-to install the OpenSSH server
+sudo service ssh status:-SSH service is now running properly
+ssh localhost:-to test if the OpenSSH server is installed properly and will accept connections
+Enter yes or y to continue:-to  set up your server to accept SSH connection requests from a different
+computer using an SSH client.
+Now edit the SSH daemon configuration file(can change the default port for SSH connections)run this command to open configuration file:
+sudo nano /etc/ssh/sshd_config
+To restart SSH service every time you make any changes to the sshd_config file by running this command: sudo service ssh restart
+To establish a secure remote connection with your servers:-ssh your_username@host_ip_address 'COMMAND'
