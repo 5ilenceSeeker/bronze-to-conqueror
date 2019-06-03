@@ -1,0 +1,32 @@
+                                              Task1:-
+Let's assume that Destination's IP is 192.168.20.55 (Linux box that you want to access)
+We want to access from Linux client with IP 138.47.99.99.
+SSH from the destination to the source (with public IP):-ssh -R 19999:localhost:22 sourceuser@138.47.99.99(* port 19999 can be any unused port)
+Now we can SSH from source to destination through SSH tunneling:ssh localhost -p 19999
+
+                                               Task2:-
+scp -r wk1 userVM@localhost:path
+//where path is where the wk1 will be copied
+#!/bin/bash
+scp -r folder1 host2@localhost:/home/wk-1
+
+                                               Task3:-
+sudo apt-get install openssh-client:-Install an OpenSSH Client
+sudo apt-get install openssh-server ii:-to install the OpenSSH server
+sudo service ssh status:-SSH service is now running properly
+ssh localhost:-to test if the OpenSSH server is installed properly and will accept connections
+Enter yes or y to continue:-to  set up your server to accept SSH connection requests from a different
+computer using an SSH client.
+Now edit the SSH daemon configuration file(can change the default port for SSH connections)run this command to open configuration file:
+sudo nano /etc/ssh/sshd_config
+To restart SSH service every time you make any changes to the sshd_config file by running this command: sudo service ssh restart
+To establish a secure remote connection with your servers:-ssh your_username@host_ip_address 'COMMAND'
+
+                                               Task4:-
+sftp username@ip_address
+                                               Task5:-
+To view the proxy environment variables:-env | grep proxy
+wget “https://en.wikipedia.org/wiki/Ubuntu_(operating_system)":-Wget is a computer program that retrieves content from web servers supports downloading via HTTP, HTTPS, and FTP
+IF Proxy tunneling failed: Proxy Authentication Required ,we have to modify the proxy environment variables to include username and password using export.Note : export is a Linux command used to set and modify environment variables.
+export https_proxy=http://<user>:<pass>@<proxy>:<port>/
+Then, try the wget again. This time, it will work.
