@@ -1,1 +1,0 @@
-scp -r _folder_  user@ip_address:home/remote/week-1
