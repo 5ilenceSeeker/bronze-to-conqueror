@@ -1,3 +1,0 @@
-export http_proxy="http://username:password@host:port"
-export https_proxy="https://username:password@post:port"
-export ftp_proxy="ftp://$username:password@host:port"
