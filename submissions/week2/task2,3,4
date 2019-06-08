@@ -1,0 +1,17 @@
+                                                          TASK2
+                                                          
+awk '/POST/{print}' access.log
+Screenshot(25)
+                                                           Task3 &4
+                                                           
+ awk -F\" '{print $6}' access.log | sort | uniq -c | sort -fr
+ awk -F\" '{print $1}' access.log | sort | uniq -c | sort -fr
+      5 88.114.240.175 - - [13/May/2018:07:14:03 +0000] 
+ 
+
+ awk -F\" '{print $4,5}' access.log | sort | uniq -c | sort -fr
+ awk '($9 ~ /404/)' access.log | awk '{print $9,$7}' | sort
+404 /ccvv
+404 /GponForm/diag_Form?images/
+
+Screenshots
