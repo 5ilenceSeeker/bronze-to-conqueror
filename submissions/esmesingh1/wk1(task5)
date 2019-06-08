@@ -1,5 +1,0 @@
-To view the proxy environment variables:-env | grep proxy
-wget “https://en.wikipedia.org/wiki/Ubuntu_(operating_system)":-Wget is a computer program that retrieves content from web servers supports downloading via HTTP, HTTPS, and FTP
-IF Proxy tunneling failed: Proxy Authentication Required ,we have to modify the proxy environment variables to include username and password using export.Note : export is a Linux command used to set and modify environment variables.
-export https_proxy=http://<user>:<pass>@<proxy>:<port>/
-Then, try the wget again. This time, it will work.
