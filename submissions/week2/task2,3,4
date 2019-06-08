@@ -23,3 +23,13 @@ Screenshot(25)
 404 /GponForm/diag_Form?images/
 
 Screenshots(25,52,11,17,31,41.png)
+ 
+                                                           Task5
+                                                           
+awk -F\" '($6 ~ /Googlebot/){print $2}' access.log | awk '{print $2}'
+
+                                                        Task7
+                                                        
+awk 'BEGIN {flag=0;} {flag++;} END {print flag;}' access.log
+Screenshot(50)
+
