@@ -33,3 +33,6 @@ awk -F\" '($6 ~ /Googlebot/){print $2}' access.log | awk '{print $2}'
 awk 'BEGIN {flag=0;} {flag++;} END {print flag;}' access.log
 Screenshot(50)
 
+                                                         Task8
+                                                        
+ awk -F\" '{print $10}' access.log | sort | uniq -c | sort -fr
