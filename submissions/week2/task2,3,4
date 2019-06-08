@@ -1,4 +1,12 @@
-                                                          TASK2
+                                                        TASK1
+                                                        
+Downloads/bronze-to-conqueror-master/files$ awk -F\" '{print $6}' access.log | sort | uniq -c | sort -fr
+      9 Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
+      8 Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36
+                                                        
+    Screenshot(45,22,8)                                                        
+                                                        
+                                                     TASK2
                                                           
 awk '/POST/{print}' access.log
 Screenshot(25)
@@ -14,4 +22,4 @@ Screenshot(25)
 404 /ccvv
 404 /GponForm/diag_Form?images/
 
-Screenshots
+Screenshots(25,52,11,17,31,41.png)
