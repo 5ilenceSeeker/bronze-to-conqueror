@@ -1,0 +1,1 @@
+awk '!/Chrome/{print "Useragent = " $12  "\n" $0 }' access.log
