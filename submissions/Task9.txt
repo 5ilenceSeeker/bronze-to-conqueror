@@ -1,1 +1,0 @@
-awk '/12[/]May[/]2018/' access.log | awk -F: 'BEGIN{var=0} {if($2==8){var++}} END{print var}' access.log
