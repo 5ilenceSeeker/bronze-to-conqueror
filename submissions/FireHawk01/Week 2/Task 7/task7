@@ -1,0 +1,1 @@
+awk -v ans=0 '{ans++} END {print ans}' access.log

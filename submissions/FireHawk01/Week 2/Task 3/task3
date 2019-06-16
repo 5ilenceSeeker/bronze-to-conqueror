@@ -1,0 +1,1 @@
+awk '/404/ {printf NR","$1 "," $4 "]" "," $7 ","}/404/{ for(i=12;i<24;i++) printf $i}/404/{ printf "\n"}' access.log >> access.csv

@@ -1,0 +1,2 @@
+awk 'NR>=20 && NR <=33 && /404/ {print NR" "$0}' access.log | awk '{printf $1","$2"," $5 "]" "," $8 ","}{ for(i=13;i<25;i++) printf $i}{ printf "\n"}'
+#there are no records satisfying the given conditions
