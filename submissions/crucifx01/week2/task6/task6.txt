@@ -1,0 +1,2 @@
+awk '{ if( substr($4,2,2) == "13" && substr($4,14,8) >= "12:00:00" && substr($4,14,8) <= "14:52:50") print }' access.log
+

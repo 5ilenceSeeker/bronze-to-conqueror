@@ -1,0 +1,6 @@
+If we make a csv file having  logs with status code 404
+awk '{ if ($9==404 && NR >= 20 && NR <= 33  ) { print; } }' <access.log> access2.csv
+
+
+If we make a csv file without status code 404 
+awk '{ if ( NR >= 20 && NR <= 33  ) print}' access.log

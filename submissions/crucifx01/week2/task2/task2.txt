@@ -1,0 +1,3 @@
+awk '/POST/{print}' access.log
+
+To print all the POST requests.

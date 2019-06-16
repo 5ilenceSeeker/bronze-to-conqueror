@@ -1,0 +1,2 @@
+awk '!/chrome/{print}' access.log
+To print all useragents except chrome.

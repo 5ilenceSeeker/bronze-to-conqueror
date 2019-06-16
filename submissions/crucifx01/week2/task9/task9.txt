@@ -1,0 +1,1 @@
+awk -v size=0 '{if ( (substr($4,2,2) == "12" && substr($4,14,8) >= "08:00:00" && substr($4,14,8) <="09:00:00")) {size+=$10} } END {print size}' access.log

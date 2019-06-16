@@ -1,0 +1,2 @@
+awk 'BEGIN {size=0;} {size+=$10;} END  { print size;} ' access.log
+Total requested size = 1108536 kb

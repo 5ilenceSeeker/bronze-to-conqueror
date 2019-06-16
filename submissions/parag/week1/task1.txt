@@ -1,0 +1,1 @@
+ssh -R 32145:localhost:50 user@192.168.43.45

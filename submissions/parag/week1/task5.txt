@@ -1,0 +1,10 @@
+If proxy is password protected>> 
+export http_proxy="http://parad0x(username):pv1234(password)@192.168.43.45:8080(port)"
+export https_proxy="https://parad0x(username):pv1234(password)@192.168.43.45:8080(port)"
+export ftp_proxy="http://parad0x(username):pv1234(password)@192.168.43.45:8080(port)"
+
+
+If not>>
+export http_proxy="http://192.168.43.45:8080(port)"
+export https_proxy="https://192.168.43.45:8080(port)"
+export ftp_proxy="http://192.168.43.45:8080(port)"

@@ -1,0 +1,1 @@
+ awk '{ gsub("Chrome","Googlebot",$22); print }' access.log

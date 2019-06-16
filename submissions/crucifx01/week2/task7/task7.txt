@@ -1,0 +1,2 @@
+awk 'BEGIN {count=0;} {count++;} END {print count;}' access.log
+Total count=231
