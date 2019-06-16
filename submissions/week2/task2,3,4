@@ -1,0 +1,38 @@
+                                                        TASK1
+                                                        
+Downloads/bronze-to-conqueror-master/files$ awk -F\" '{print $6}' access.log | sort | uniq -c | sort -fr
+      9 Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
+      8 Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36
+                                                        
+    Screenshot(45,22,8)                                                        
+                                                        
+                                                     TASK2
+                                                          
+awk '/POST/{print}' access.log
+Screenshot(25)
+                                                           Task3 &4
+                                                           
+ awk -F\" '{print $6}' access.log | sort | uniq -c | sort -fr
+ awk -F\" '{print $1}' access.log | sort | uniq -c | sort -fr
+      5 88.114.240.175 - - [13/May/2018:07:14:03 +0000] 
+ 
+
+ awk -F\" '{print $4,5}' access.log | sort | uniq -c | sort -fr
+ awk '($9 ~ /404/)' access.log | awk '{print $9,$7}' | sort
+404 /ccvv
+404 /GponForm/diag_Form?images/
+
+Screenshots(25,52,11,17,31,41.png)
+ 
+                                                           Task5
+                                                           
+awk -F\" '($6 ~ /Googlebot/){print $2}' access.log | awk '{print $2}'
+
+                                                        Task7
+                                                        
+awk 'BEGIN {flag=0;} {flag++;} END {print flag;}' access.log
+Screenshot(50)
+
+                                                         Task8
+                                                        
+ awk -F\" '{print $10}' access.log | sort | uniq -c | sort -fr
