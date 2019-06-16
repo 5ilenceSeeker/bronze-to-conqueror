@@ -1,0 +1,1 @@
+curl https://jsonplaceholder.typicode.com/posts > task2.csv
