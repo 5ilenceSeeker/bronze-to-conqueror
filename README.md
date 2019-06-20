@@ -13,3 +13,12 @@ This week will cover the basics related to setting up the enviroment and install
 
 ### Week2:
 This week will cover the basic shell scripting using Sed and Awk.The tasks are to be performed on the given access.log file.
+
+### Week3:
+In this week you will learn about the basic python scripting using python Requests and BeautifulSoup module.
+
+### Week4:
+This week involves Foot-Printing and a bit of development where you will be asked to develop some websites having vulnerabilities and exploit them, also learn about different foot-printing methodologies (Shodan, Google dorks ..)
+
+### Week5:
+This week will take you through some basic forensics and steganography questions.
