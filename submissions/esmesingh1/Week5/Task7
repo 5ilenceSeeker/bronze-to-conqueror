@@ -1,0 +1,4 @@
+using exiftool
+using steghide
+flag.txt
+finally flag!!
