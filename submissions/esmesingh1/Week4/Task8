@@ -1,0 +1,1 @@
+shodan search --fields ip_str Cisco 
