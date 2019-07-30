@@ -1,0 +1,14 @@
+$uname=$_POST['uname'];
+$passwrd=$_POST['passwrd'];
+$query="select username,pass from users where username='$uname' and password='$passwrd' limit 0,1";
+$result=mysql_query($query);
+$rows = mysql_fetch_array($result);
+if($rows)
+{
+echo "Logged in successfully" ;
+create_session();
+}
+else
+{
+Echo "Failed! try again";
+}
